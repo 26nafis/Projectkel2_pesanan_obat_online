@@ -57,6 +57,12 @@ namespace Projectkel2_pesanan_obat_online
                 conn.Close();
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tampilObat();
+        }
+
+
 
 
 
