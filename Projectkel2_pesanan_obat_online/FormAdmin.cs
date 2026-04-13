@@ -19,3 +19,9 @@ namespace Projectkel2_pesanan_obat_online
             InitializeComponent();
         }
 
+
+        public FormAdmin(string nama)
+        {
+            InitializeComponent();
+            namaUser = nama;
+        }
