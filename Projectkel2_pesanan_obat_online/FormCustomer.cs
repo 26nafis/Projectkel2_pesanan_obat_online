@@ -61,6 +61,15 @@ namespace Projectkel2_pesanan_obat_online
         {
             tampilObat();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 login = new Form1();
+            login.Show();
+            this.Hide();
+        }
+    }
+}
+
 
 
 
