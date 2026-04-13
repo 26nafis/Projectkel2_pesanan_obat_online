@@ -29,3 +29,14 @@ namespace Projectkel2_pesanan_obat_online
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtNama.Text == "" || txtEmail.Text == "" || txtPassword.Text == "")
+            {
+                MessageBox.Show("Semua field wajib diisi!");
+                return;
+            }
+
+            try
+            {
