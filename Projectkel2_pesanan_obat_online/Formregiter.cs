@@ -55,3 +55,15 @@ namespace Projectkel2_pesanan_obat_online
                     conn.Close();
                     return;
                 }
+                cmd = new SqlCommand(
+                "INSERT INTO akun (nama,email,password,role) VALUES (@nama,@email,@password,'customer')", conn);
+
+                cmd.Parameters.AddWithValue("@nama", txtNama.Text);
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Registrasi Berhasil! Silakan Login.");
+
+                conn.Close();
