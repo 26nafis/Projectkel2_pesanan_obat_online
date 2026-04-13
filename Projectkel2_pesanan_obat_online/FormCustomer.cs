@@ -37,4 +37,26 @@ namespace Projectkel2_pesanan_obat_online
             label1.Text = "Dashboard Customer\nHalo, " + namaUser;
             tampilObat();
         }
+        void tampilObat()
+        {
+            try
+            {
+                conn.Open();
+
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM obat", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dataGridView1.DataSource = dt;
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                conn.Close();
+            }
+        }
+
+
 
