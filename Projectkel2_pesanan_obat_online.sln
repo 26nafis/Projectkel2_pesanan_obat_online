@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projectkel2_pesanan_obat_online", "Projectkel2_pesanan_obat_online\Projectkel2_pesanan_obat_online.csproj", "{6EC0B7F3-7E38-428D-AB5B-D2076399D7AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EC0B7F3-7E38-428D-AB5B-D2076399D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC0B7F3-7E38-428D-AB5B-D2076399D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC0B7F3-7E38-428D-AB5B-D2076399D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC0B7F3-7E38-428D-AB5B-D2076399D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0356B68E-B9EB-47C3-A674-C767C713380E}
+	EndGlobalSection
+EndGlobal
