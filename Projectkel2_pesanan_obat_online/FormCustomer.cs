@@ -23,3 +23,18 @@ namespace Projectkel2_pesanan_obat_online
             conn = new SqlConnection("Data Source=NAFIS\\NAFISCOY;Initial Catalog=ApotekDB;Integrated Security=True");
         }
 
+        public FormCustomer(string nama)
+        {
+            InitializeComponent();
+
+            namaUser = nama;
+
+            conn = new SqlConnection("Data Source=NAFIS\\NAFISCOY;Initial Catalog=ApotekDB;Integrated Security=True");
+        }
+
+        private void FormCustomer_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Dashboard Customer\nHalo, " + namaUser;
+            tampilObat();
+        }
+
