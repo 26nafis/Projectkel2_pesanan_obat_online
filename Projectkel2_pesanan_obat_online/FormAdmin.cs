@@ -25,3 +25,14 @@ namespace Projectkel2_pesanan_obat_online
             InitializeComponent();
             namaUser = nama;
         }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Dashboard Admin\nSelamat datang, " + namaUser;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormObat f = new FormObat();
+            f.Show();
+        }
