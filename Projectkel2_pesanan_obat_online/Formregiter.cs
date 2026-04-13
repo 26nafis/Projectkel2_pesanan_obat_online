@@ -40,3 +40,18 @@ namespace Projectkel2_pesanan_obat_online
 
             try
             {
+                conn.Open();
+
+                SqlCommand cek = new SqlCommand(
+                "SELECT COUNT(*) FROM akun WHERE email=@email", conn);
+
+                cek.Parameters.AddWithValue("@email", txtEmail.Text);
+
+                int ada = (int)cek.ExecuteScalar();
+
+                if (ada > 0)
+                {
+                    MessageBox.Show("Email sudah terdaftar!");
+                    conn.Close();
+                    return;
+                }
