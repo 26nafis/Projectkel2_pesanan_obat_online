@@ -67,3 +67,25 @@ namespace Projectkel2_pesanan_obat_online
                 MessageBox.Show("Registrasi Berhasil! Silakan Login.");
 
                 conn.Close();
+                Form1 login = new Form1();
+                login.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                conn.Close();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
